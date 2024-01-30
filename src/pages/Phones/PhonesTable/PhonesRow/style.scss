@@ -1,0 +1,33 @@
+.phones-row {
+  display: flex;
+  flex-direction: column;
+
+  &__wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &--header {
+    font-weight: bold;
+    background-color: #e8fcd0;
+  }
+
+  &__cell {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 50%;
+    padding: 12px;
+    border: 1px solid black;
+
+    &:last-child {
+      width: 50%;
+    }
+  }
+
+  &__icon {
+    transform: rotate(45deg);
+    width: 16px;
+    margin-right: 8px;
+  }
+}
