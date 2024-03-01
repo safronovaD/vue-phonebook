@@ -1,6 +1,6 @@
 <template>
   <div class="input">
-    <div class="input__label"> {{ label }}</div>
+    <div class="input__label bold"> {{ label }}</div>
     <input
       :value="value"
       :placeholder="placeholder"
@@ -40,6 +40,11 @@ export default {
     width: 70%;
     border-radius: 8px;
     border: 1px solid black;
+    font-size: 16px;
+
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
   }
 }
 </style>

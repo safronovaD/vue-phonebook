@@ -1,11 +1,11 @@
 <template>
   <div class="phones-table">
-    <PhonesRow
+    <PhonesTableGroup
       :first-cell="'Имя'"
       :second-cell="'Телефон'"
       :is-header-row="true"
     />
-    <PhonesRow
+    <PhonesTableGroup
       v-for="item in data"
       :key="item.id"
       :first-cell="item.name"
@@ -16,12 +16,12 @@
 </template>
 
 <script>
-import PhonesRow from "./PhonesRow/PhonesRow";
+import PhonesTableGroup from "./PhonesTableGroup/PhonesTableGroup";
 
 export default {
   name: "PhonesTable",
   components: {
-    PhonesRow
+    PhonesTableGroup
   },
   props: {
     data: {
@@ -35,10 +35,5 @@ export default {
 <style lang="scss" scoped>
 .phones-table {
   max-width: 700px;
-  margin: 32px 0;
-
-  @media (max-width: 480px) {
-    margin: 24px 0;
-  }
 }
 </style>

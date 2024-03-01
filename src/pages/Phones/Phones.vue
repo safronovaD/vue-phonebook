@@ -1,11 +1,12 @@
 <template>
   <div class="phones container">
     <h1>Телефонная книга</h1>
-    <PhonesTable :data="phonesList"/>
     <Button
-      :text="'Добавить'"
+      class="phones__button"
+      :text="'Добавить номер'"
       @click="isVisibleModalAddPhone = true"
     />
+    <PhonesTable :data="phonesList"/>
     <ModalAddPhone v-if="isVisibleModalAddPhone"
                    :phonesList="phonesList"
                    :last-phone-id="lastPhoneId"

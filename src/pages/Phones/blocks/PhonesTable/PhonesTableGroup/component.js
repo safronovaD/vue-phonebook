@@ -1,5 +1,5 @@
 export default {
-  name: "PhonesRow",
+  name: "PhonesTableGroup",
   props: {
     firstCell: {
       type: String,

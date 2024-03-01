@@ -1,13 +1,8 @@
-.phones-row {
+.phones-table-group {
   display: flex;
   flex-direction: column;
 
-  &--header {
-    font-weight: bold;
-    background-color: #e8fcd0;
-  }
-
-  &__wrapper {
+  &__row {
     display: flex;
     justify-content: flex-end;
   }
@@ -23,7 +18,9 @@
       width: 40%;
     }
 
-    &--big {
+    &--header {
+      background-color: #e8fcd0;
+      font-weight: bold;
       font-size: 24px;
 
       @media (max-width: 480px) {

@@ -1,5 +1,5 @@
 <template>
-<button @click="$emit('click')" :disabled="disabled">{{ text }}</button>
+<button class="button bold" @click="$emit('click')" :disabled="disabled">{{ text }}</button>
 </template>
 
 <script>
@@ -19,10 +19,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-button {
+.button {
   padding: 8px 16px;
   font-size: 24px;
-  font-weight: bold;
   border: 1px solid black;
   border-radius: 8px;
   background-color: white;
