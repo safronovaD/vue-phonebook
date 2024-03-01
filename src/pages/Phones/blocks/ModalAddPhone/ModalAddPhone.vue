@@ -3,7 +3,6 @@
     <template #header>
       <h2>Добавить пользователя</h2>
     </template>
-
     <template #content>
       <Input
         v-model="form.name"
@@ -22,7 +21,6 @@
         :displayed-field="'name'"
       />
     </template>
-
     <template #footer>
       <Button :text="'Сохранить'" :disabled="!(form.name && form.phone)" @click="save"/>
     </template>

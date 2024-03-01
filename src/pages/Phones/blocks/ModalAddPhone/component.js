@@ -1,7 +1,7 @@
-import Button from '../../../components/form-elements/Button/Button';
-import Modal from '../../../components/Modal/Modal';
-import Input from '../../../components/form-elements/Input/Input';
-import Select from '../../../components/form-elements/Select/Select';
+import Button from '../../../../components/Button/Button';
+import Modal from '../../../../components/Modal/Modal';
+import Input from '../../../../components/Input/Input';
+import Select from '../../../../components/Select/Select';
 
 export default {
   name: "ModalAddPhone",

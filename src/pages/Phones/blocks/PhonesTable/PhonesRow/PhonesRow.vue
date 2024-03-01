@@ -1,22 +1,26 @@
 <template>
   <div :class="['phones-row', {'phones-row--header': isHeaderRow}]">
     <div class="phones-row__wrapper">
-      <div class="phones-row__cell" :style="{'width': `calc(50% - ${depth * 16}px)`}">
+      <div
+        :class="['phones-row__cell', {'phones-row__cell--big': isHeaderRow}]"
+        :style="{'width': `calc(60% - ${depth * 16}px)`}"
+      >
         <img
           v-if="depth > 0"
-          src="../../../../assets/images/icons/close.png"
-          alt="plus"
+          src="../../../../../assets/images/icons/close.png" alt="plus"
           class="phones-row__icon"
         >
-        {{ name }}
+        {{ firstCell }}
       </div>
-      <div class="phones-row__cell">{{ phone }}</div>
+      <div :class="['phones-row__cell', {'phones-row__cell--big': isHeaderRow}]">
+        {{ secondCell }}
+      </div>
     </div>
     <PhonesRow
       v-for="item in children"
       :key="item.id"
-      :name="item.name"
-      :phone="item.phone"
+      :first-cell="item.name"
+      :second-cell="item.phone"
       :depth="depth + 1"
       :children="item.children"
     />

@@ -2,18 +2,34 @@ div,
 p {
   font-family: Calibri;
   font-size: 16px;
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+  }
 }
 
 h1,
-h2 {
+.h1,
+h2,
+.h2 {
   font-family: Calibri;
   font-weight: bold;
 }
 
-h1 {
+h1,
+.h1 {
   font-size: 36px;
+
+  @media (max-width: 480px) {
+    font-size: 24px;
+  }
 }
 
-h2 {
+h2,
+.h2 {
   font-size: 32px;
+
+  @media (max-width: 480px) {
+    font-size: 20px;
+  }
 }

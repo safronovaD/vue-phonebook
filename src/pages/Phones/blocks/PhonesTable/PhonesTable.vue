@@ -1,15 +1,15 @@
 <template>
   <div class="phones-table">
     <PhonesRow
-      :name="'Имя'"
-      :phone="'Телефон'"
+      :first-cell="'Имя'"
+      :second-cell="'Телефон'"
       :is-header-row="true"
     />
     <PhonesRow
       v-for="item in data"
       :key="item.id"
-      :name="item.name"
-      :phone="item.phone"
+      :first-cell="item.name"
+      :second-cell="item.phone"
       :children="item.children"
     />
 </div>
@@ -35,6 +35,10 @@ export default {
 <style lang="scss" scoped>
 .phones-table {
   max-width: 700px;
-  margin-top: 32px;
+  margin: 32px 0;
+
+  @media (max-width: 480px) {
+    margin: 24px 0;
+  }
 }
 </style>

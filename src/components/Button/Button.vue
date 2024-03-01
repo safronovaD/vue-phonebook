@@ -21,14 +21,18 @@ export default {
 <style lang="scss" scoped>
 button {
   padding: 8px 16px;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
   border: 1px solid black;
   border-radius: 8px;
   background-color: white;
   cursor: pointer;
 
-  &:hover {
+  @media (max-width: 480px) {
+    font-size: 18px;
+  }
+
+  &:not(:disabled):hover {
     background-color: #e8fcd0;
     transition: all 0.2s linear;
   }

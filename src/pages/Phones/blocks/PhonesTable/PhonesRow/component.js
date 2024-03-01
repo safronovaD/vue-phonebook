@@ -1,11 +1,11 @@
 export default {
   name: "PhonesRow",
   props: {
-    name: {
+    firstCell: {
       type: String,
       required: true
     },
-    phone: {
+    secondCell: {
       type: String,
       required: true
     },

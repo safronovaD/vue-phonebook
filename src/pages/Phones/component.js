@@ -1,6 +1,6 @@
-import Button from '../../components/form-elements/Button/Button';
-import ModalAddPhone from "./ModalAddPhone/ModalAddPhone";
-import PhonesTable from "./PhonesTable/PhonesTable";
+import Button from '../../components/Button/Button';
+import ModalAddPhone from "./blocks/ModalAddPhone/ModalAddPhone";
+import PhonesTable from "./blocks/PhonesTable/PhonesTable";
 
 export default {
   name: "Phones",
